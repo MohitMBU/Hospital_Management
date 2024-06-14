@@ -12,7 +12,7 @@ while Exit_c:
     if person == 1: #User is Doctor
         filename = 'Doctor.csv'
         data_doctor = pd.read_csv(filename)
-        fields = ["Name", "Specialization","Appointment1","Appointment2","Appointment3","Appointment4","Appointment5","Appointmen6","Appointment7"]
+        fields = ["Name", "Specialization","Appointment1","Appointment2","Appointment3","Appointment4","Appointment5","Appointment6","Appointment7"]
         operation = login.LoginCreate(filename,data_doctor,fields)
         id = operation.choices_function()
         index_list = data_doctor.index[data_doctor["Id"] == id].tolist()
